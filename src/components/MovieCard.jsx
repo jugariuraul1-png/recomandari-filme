@@ -1,8 +1,14 @@
+// Autor: Teodora
+// Componentă de afișare a detaliilor unui film.
+// Teodora a proiectat acest card cu toate informațiile relevante: poster, an, durată,
+// ratinguri din mai multe surse și un sistem de recomandare bazat pe scorul Rotten Tomatoes.
+
 function MovieCard({ movie }) {
   const imdb = movie.Ratings?.find(r => r.Source === 'Internet Movie Database');
   const rt = movie.Ratings?.find(r => r.Source === 'Rotten Tomatoes');
   const meta = movie.Ratings?.find(r => r.Source === 'Metacritic');
 
+  // Teodora a definit pragurile de recomandare: >80% = must-watch, <50% = de evitat.
   const rtValue = rt ? parseInt(rt.Value) : null;
   let recommendation = null;
   if (rtValue !== null) {

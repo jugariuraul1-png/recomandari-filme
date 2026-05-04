@@ -1,3 +1,8 @@
+// Autor: Dalia
+// Componentă pentru filtrarea filmelor după gen.
+// Dalia a creat butoanele de filtrare și a gestionat logica de selecție activă,
+// astfel încât utilizatorul să poată restrânge rezultatele la genul dorit.
+
 function GenreFilter({ selected, onSelect }) {
   const GENRES = ['Toate', 'Action', 'Comedy', 'Drama', 'Sci-Fi'];
   return (

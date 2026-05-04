@@ -1,3 +1,8 @@
+// Autor: Raul
+// Componentă pentru bara de căutare a filmelor.
+// Raul a construit acest input controlat cu suport pentru tasta Enter,
+// astfel încât utilizatorul să poată căuta rapid fără a folosi mouse-ul.
+
 import { useState } from 'react';
 function SearchBar({ onSearch }) {
   const [input, setInput] = useState('');

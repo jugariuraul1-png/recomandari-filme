@@ -1,3 +1,9 @@
+/* Autor: Teodora
+   Stilizarea completă a aplicației.
+   Teodora a ales tema dark inspirată din Netflix (fundal #141414, accent roșu #e50914),
+   a definit layout-ul responsive cu flexbox și a stilizat toate componentele:
+   bara de căutare, cardurile de film, badge-urile de rating și butoanele de gen. */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
